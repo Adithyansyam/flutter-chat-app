@@ -13,7 +13,23 @@ class _SigninState extends State<Signin> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container( child: Stack(children: [
-        Center(child: Text("Signin Screen"),)
+        Container(
+          height: MediaQuery.of(context).size.height/3.5,
+          width: MediaQuery.of(context).size.width, 
+
+
+          decoration: BoxDecoration(
+
+            gradient: LinearGradient(colors: [Color.fromARGB(255, 1, 1, 1), Color.fromARGB(255, 15, 15, 15)], begin: Alignment.topLeft,   end: Alignment.bottomRight),
+         borderRadius: BorderRadius.vertical(bottom: Radius.elliptical(MediaQuery.of(context).size.width, 105.00))
+          ),
+        )
+,
+        Column(
+          children: [
+            Center(child:   Text("Sign In", style: TextStyle(color: Colors.purple,fontSize: 20.0,fontWeight: FontWeight.bold )  ,)  ,) 
+          ],
+        )
       ],),),
     );
   }
