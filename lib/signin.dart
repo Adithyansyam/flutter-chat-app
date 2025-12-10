@@ -25,10 +25,19 @@ class _SigninState extends State<Signin> {
           ),
         )
 ,
-        Column(
-          children: [
-            Center(child:   Text("Sign In", style: TextStyle(color: Colors.purple,fontSize: 20.0,fontWeight: FontWeight.bold )  ,)  ,) 
-          ],
+                Padding(
+          padding: const EdgeInsets.only(top: 90.0),
+          child: Column(
+            children: [
+              Center(child: Text("Sign In", style: TextStyle
+              (color: const Color.fromARGB(255, 253, 241, 255),
+              fontSize: 35.0,fontWeight: FontWeight.bold))),
+
+               Center(child:
+                Text("Log in to your account", style: TextStyle(color: const Color.fromARGB(255, 229, 158, 242),
+                fontSize: 25.0,fontWeight: FontWeight.bold))),
+            ],
+          ),
         )
       ],),),
     );
